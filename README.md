@@ -13,4 +13,4 @@ The following are the **data sources** that we have in mind as of now. However, 
 
 
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png | width=48)
+![alt text](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png) {:height="50%" width="50%"}
