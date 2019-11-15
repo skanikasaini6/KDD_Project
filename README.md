@@ -46,7 +46,7 @@ Type-type of store
 
 Our aim is to predict the Weekly Sales. 
 
-**CRISP-DM**
+**Defining Cross-Industry Standard Process For Data Mining**
 
 ***Business Understanding:***
 **Data Understanding:***
