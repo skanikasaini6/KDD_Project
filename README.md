@@ -1,7 +1,7 @@
 ***Project on Walmart: Store Sales Forecast***</br>
 
 ***Group Name:***</br>
-Outliers
+Outliers</br>
 **Group Members:**
 1. Ankit Kejriwal
 2. Herleen Kaur Sanhotra
