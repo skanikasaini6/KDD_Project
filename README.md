@@ -44,7 +44,7 @@ Type-type of store
 
 **Goal/Target variable:**
 
-Our aim is to predict the Weekly Sales. 
+Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target variable on which we will test the effects of other predictors.
 
 **Defining Cross-Industry Standard Process For Data Mining:**
 
