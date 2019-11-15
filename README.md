@@ -1,15 +1,22 @@
-**Project on Walmart: Store Sales Forecast**</br>
+***Project on Walmart: Store Sales Forecast***</br>
+
+***Group Name:***</br>
+Outliers
 **Group Members:**
 1. Ankit Kejriwal
 2. Herleen Kaur Sanhotra
 3. Kanika Saini
 4. Sindhura Sadam
 
-Datasource:
+**Datasource:**
 
 https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 
-Introduction to the Dataset:
+**Introduction to the Dataset:**
+
+
+
+
 
 
 
