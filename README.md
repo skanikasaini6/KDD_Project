@@ -46,6 +46,15 @@ Type-type of store
 
 Our aim is to predict the Weekly Sales. 
 
+**CRISP/DM**
+
+Business Understanding:</br>
+Data Understanding:</br>
+Data Preparation:</br>
+Modeling:</br>
+Evaluation:</br>
+Deployment:</br>
+
 
 
 
