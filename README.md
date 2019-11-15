@@ -15,7 +15,7 @@ https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 
 **Introduction to the Dataset:**
 
-We are working on retail data taken from Kaggle. The Walmart dataset contains records of 2 years data collected of 45 walmart stores from 5/2/2010 to 1/11/2012. We are working with 4 datasets train,features,stores and test(for testing our models). 
+We are working on retail data taken from Kaggle. The dataset contains records of 2 years data collected from 45 different Walmart stores for time period 5/2/2010 to 1/11/2012. We are working with 4 datasets train,features,stores and test(for testing our models). 
 
 **Train dataset contains the following predictors:**
 
