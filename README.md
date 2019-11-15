@@ -19,27 +19,27 @@ We are working on retail data taken from Kaggle. The Walmart dataset contains re
 
 **Train dataset contains the following predictors:**
 
-Store - the store number
-Dept - the department number
-Date - the week
-IsHoliday - whether the week is a special holiday week
+Store - the store number</br>
+Dept - the department number</br>
+Date - the week</br>
+IsHoliday - whether the week is a special holiday week</br>
 Weekly_Sales -  sales for the given department in the given store
 
 **Features dataset contains the following predictors:**
 
-Store - the store number
-Date - the week
-Temperature - average temperature in the region
-Fuel_Price - cost of fuel in the region
-MarkDown1-5 - anonymized data related to promotional markdowns that Walmart is running. MarkDown data is only available after Nov 2011, and is not available for all stores all the time. Missing values are marked as NA.
-CPI - the consumer price index
-Unemployment - the unemployment rate
+Store - the store number</br>
+Date - the week</br>
+Temperature - average temperature in the region</br>
+Fuel_Price - cost of fuel in the region</br>
+MarkDown1-5 - anonymized data related to promotional markdowns that Walmart is running. MarkDown data is only available after Nov 2011, and is not available for all stores all the time. Missing values are marked as NA.</br>
+CPI - the consumer price index</br>
+Unemployment - the unemployment rate</br>
 IsHoliday - whether the week is a special holiday week
 
 **Stores dataset contains the following predictors:**
 
-Store - the store number
-Size-size of store
+Store - the store number</br>
+Size-size of store</br>
 Type-type of store
 
 **Goal/Target variable:**
