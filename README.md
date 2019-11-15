@@ -1,4 +1,4 @@
-**Project on Walmart: Store Sales Forecast**
+**Project on Walmart: Store Sales Forecast**</br>
 **Group Members:**
 1. Ankit Kejriwal
 2. Herleen Kaur Sanhotra
