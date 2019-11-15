@@ -46,10 +46,11 @@ Type-type of store
 
 Our aim is to predict the Weekly Sales. 
 
-**Defining Cross-Industry Standard Process For Data Mining**
+**Defining Cross-Industry Standard Process For Data Mining:**
 
 ***Business Understanding:***
-**Data Understanding:***
+
+***Data Understanding:***
 
 ***Data Preparation:***
 
