@@ -1,6 +1,6 @@
-***Project on Walmart: Store Sales Forecast***</br>
+**Project on Walmart: Store Sales Forecast**</br>
 
-***Group Name:***</br>
+**Group Name:**</br>
    Outliers</br>
    
 **Group Members:**
