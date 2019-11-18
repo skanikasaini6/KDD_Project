@@ -50,6 +50,9 @@ Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target va
 
 ***Business Understanding:***
 
+
+
+
 ***Data Understanding:***
 
 ***Data Preparation:***
