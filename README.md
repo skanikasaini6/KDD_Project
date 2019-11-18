@@ -81,12 +81,39 @@ For example, a simple deployment can be like generate a report or it can be more
 
 Our dataset is focused on predicting weekly sales from data collected from 45 walmart stores. There are different predictors that can have an effect on our target variable.Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We will explore what kind of correlations does this particular predictor have on our target variables. We would also like to know if unemployement rate around a particular store has any drastic effect on the sales of that store. Unemployment can be a major factor as people with low income might tend to contribute lesser to the sales as they will buy limited and cheaper products. One of the most interesting insights in the dataset would be looking at how markdowns will play a role with the weekly sales. 
 
+
 ***Data Understanding:***
 
+The main objective was to forecast weekly sales for each department in 45 Walmart stores located in different regions and also to carry out statistical testing and validation of the models which features DataPreprocessing, Exploratory Data Analysis, modelling on train dataset and validating on test dataset
+1.	Features.csv
+2.	Stores.csv
+3.	Train.csv
+4.	Test.csv
+Features: Dataset Contains historical data of 45 stores in different regions for period of 4 years. It includes major markdown events that happen throughout the year like Christmas, Labour Day, Thanksgiving, Super bowl. Other features like IS Holiday, Date, Fuel Price can be used in Hypothesis. 
+        For Example: effect of sales during holiday seasons on each store on weekly basis
+        
+Stores: Dataset contains information on 45 stores like Type of store and Size(in sqft) of the store.
 
-***Data Preparation:***
+Train: Dataset contains historical train data on which the model is trained. Features included are Store number, Department number, Date which is date of the week we are predicting the sales. Weekly_sales for given department in the given store, and IS holiday
+ Example Hypothesis: Predicting Department wise sales for each store
+Test: It includes same fields as Train.csv excluding weekly sales which is our Target variable.
+
+***Data Preperation/preprocessing:***
+
+1.	importing Features,Stores,Train and Test datasets into jupyter notebook
+2.	Understanding information provided in the datasets and looking for types of columns and missing values.
+3.	Converting Datatype of Date column to DATETIME from OBJECT
+4.	Merging train dataset with store id on stores dataset 
+5.	Merging resulting dataset with features on 'Store','Date','IsHoliday'
+6.	Now we have a single dataset with all the columns required for exploratory Data Analysis.
+7.Checking for Null values and imputing with constants
+8.Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming original dataset.
+
 
 ***Modeling:***
+
+
+
 
 ***Evaluation:***
 
