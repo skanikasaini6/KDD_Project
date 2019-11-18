@@ -48,8 +48,10 @@ Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target va
 
 **Defining Cross-Industry Standard Process For Data Mining:**
 
-According to the Cross-Industry Standard Process For Data Mining, a project life cycle consist of six phases. The phase sequence is adaptive. That is, the next phase in the sequence often depends on the outcome associated with the previous phase.
+According to the Cross-Industry Standard Process For Data Mining, a data mining project life cycle consist of six phases. The phase sequence is adaptive. That is, the next phase in the sequence often depends on the outcome associated with the previous phase.
 The six phases are:</br>
+
+![Alt Text](https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.crispdm.help/images/crisp_process.gif)
 
 **1. Business/Research Understanding Phase:**</br>
 First, clearly define the project objectives and requirements in terms of the business or research unit as a whole and then translate these goals and restrictions into the formulation of a data mining problem definition.
