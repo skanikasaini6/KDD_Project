@@ -49,7 +49,9 @@ Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target va
 **Defining Cross-Industry Standard Process For Data Mining:**
 
 <p align="center"> 
-    <img src="https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.crispdm.help/images/crisp_process.gif" height="50%" width="50%">
+    <a href="#">
+        <img src="https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.crispdm.help/images/crisp_process.gif" height="50%" width="50%">
+    </a>
 </p> 
 
 According to the Cross-Industry Standard Process For Data Mining, a data mining project life cycle consist of six phases. The phase sequence is adaptive. That is, the next phase in the sequence often depends on the outcome associated with the previous phase.
