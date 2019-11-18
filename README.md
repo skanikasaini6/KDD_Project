@@ -58,11 +58,11 @@ According to the Cross-Industry Standard Process For Data Mining, a data mining 
 The six phases are:</br>
 
 **1. Business/Research Understanding Phase:**</br>
-First, clearly define the project objectives and requirements in terms of the business or research unit as a whole and then translate these goals and restrictions into the formulation of a data mining problem definition.
-Finally, prepare a preliminary strategy for achieving these objectives.
+In this step we define the project objectives and requirements in terms of the business or research unit as a whole and then translate these goals and restrictions into the formulation of a data mining problem definition.
+Finally, we prepare a preliminary strategy for achieving these objectives.
 
 **2. Data Understanding Phase:**</br>
-The first step is to collect the data and then use exploratory data analysis to familiarize ourselves with the data and discover initial insights. The next step is to evaluate the quality of the data and if required select the interesting subsets that may contain actionable patterns.
+The first step in this phase is to collect the data and then use exploratory data analysis to familiarize ourselves with the data and discover initial insights. The next step is to evaluate the quality of the data and if required select the interesting subsets that may contain actionable patterns.
 
 **3. Data Preparation Phase:**</br>
 This is a  labor-intensive phase that covers all aspects of preparing the final data set, which shall be used for subsequent phases, from the initial, raw, dirty data. Here we select the cases and variables we want to analyze, and that is appropriate for our analysis.We perform transformations on certain variables if needed. The goal is to clean the raw data so that it is ready for the modeling tools.
