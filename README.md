@@ -82,6 +82,8 @@ For example, a simple deployment can be like generate a report or it can be more
 
 
 
+
+
 ***Data Understanding:***
 
 ***Data Preparation:***
