@@ -47,9 +47,7 @@ Type-type of store
 Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target variable on which we will test the effects of other predictors.
 
 **Defining Cross-Industry Standard Process For Data Mining:**
-<p align="center">
 ![Alt Text](https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.crispdm.help/images/crisp_process.gif)   
-</p>
 
 According to the Cross-Industry Standard Process For Data Mining, a data mining project life cycle consist of six phases. The phase sequence is adaptive. That is, the next phase in the sequence often depends on the outcome associated with the previous phase.
 The six phases are:</br>
