@@ -79,12 +79,10 @@ For example, a simple deployment can be like generate a report or it can be more
 
 ***Business Understanding:***
 
-
-
-
-
+Our dataset is focused on predicting weekly sales from data collected from 45 walmart stores. There are different predictors that can have an effect on our target variable.Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We will explore what kind of correlations does this particular predictor have on our target variables. We would also like to know if unemployement rate around a particular store has any drastic effect on the sales of that store. Unemployment can be a major factor as people with low income might tend to contribute lesser to the sales as they will buy limited and cheaper products. One of the most interesting insights in the dataset would be looking at how markdowns will play a role with the weekly sales. 
 
 ***Data Understanding:***
+
 
 ***Data Preparation:***
 
