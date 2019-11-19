@@ -89,8 +89,8 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 *	Merging train dataset with store id on stores dataset 
 *	Merging resulting dataset with features on 'Store','Date','IsHoliday'
 *	Now we have a single dataset with all the columns required for exploratory Data Analysis.
-*Checking for Null values and imputing with constants
-*Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming original dataset.
+*  Checking for Null values and imputing with constants
+*  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming  original dataset.
 
 
 ***Modeling:***
