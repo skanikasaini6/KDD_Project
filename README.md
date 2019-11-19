@@ -87,18 +87,25 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 *	Understanding information provided in the datasets and looking for types of columns and missing values.
 *	Converting Datatype of Date column to DATETIME from OBJECT
 *	Merging train dataset with store id on stores dataset 
-*	Merging resulting dataset with features on 'Store','Date','IsHoliday'
-*	Now we have a single dataset with all the columns required for exploratory Data Analysis.
-*  Checking for Null values and imputing with constants
+*	Merging resulting dataset with features dataset using the common predictors 'Store', 'Date', 'IsHoliday'
+*	Now we have a single dataset with all the columns required for Exploratory Data Analysis.
+*  Checking for null values and imputing with constants-
+   Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks. We have   replaced the missing values with -9999 indicating no extra sales. 
 *  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming  original dataset.
 
 
 ***Modeling:***
 
+After carefully analysis of our data in previous steps, we will be looking into conducting our predictive analysis using the following modeling techniques:
 
+* Logistic Regression
+* Clustering
+* Association Rules
 
 
 ***Evaluation:***
+
+We are going to build and train our model using the above modeling techniques. Every predictors will play and important role in analyzing the outcome from our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
 
 ***Deployment:***
 
