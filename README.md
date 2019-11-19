@@ -64,13 +64,15 @@ Our dataset is focused on predicting weekly sales from data collected from 45 wa
 
 ***Data Understanding:***
 
-The main objective was to forecast weekly sales for each department in 45 Walmart stores located in different regions and also to carry out statistical testing and validation of the models which features DataPreprocessing, Exploratory Data Analysis, modelling on train dataset and validating on test dataset
+The main objective is to forecast weekly sales for each department in 45 Walmart stores located in different regions and also to carry out statistical testing and validation of the models which features DataPreprocessing, Exploratory Data Analysis, modeling on train dataset and validating on test dataset
+
 1.	Features.csv
 2.	Stores.csv
 3.	Train.csv
 4.	Test.csv
-Features: Dataset Contains historical data of 45 stores in different regions for period of 4 years. It includes major markdown events that happen throughout the year like Christmas, Labour Day, Thanksgiving, Super bowl. Other features like IS Holiday, Date, Fuel Price can be used in Hypothesis. 
-        For Example: effect of sales during holiday seasons on each store on weekly basis
+
+Features: Dataset Contains historical data of 45 stores in different regions for period of 2 years. It includes major markdown events that happen throughout the year like Christmas, Labour Day, Thanksgiving, Super bowl. Other features like IsHoliday, Date, Fuel_Price can be used in Hypothesis. 
+           For Example: effect of sales during holiday seasons on each store on weekly basis
         
 Stores: Dataset contains information on 45 stores like Type of store and Size(in sqft) of the store.
 
@@ -80,7 +82,7 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 
 ***Data Preperation/preprocessing:***
 
-1.	importing Features,Stores,Train and Test datasets into jupyter notebook
+1.	Importing Features,Stores,Train and Test datasets into jupyter notebook
 2.	Understanding information provided in the datasets and looking for types of columns and missing values.
 3.	Converting Datatype of Date column to DATETIME from OBJECT
 4.	Merging train dataset with store id on stores dataset 
