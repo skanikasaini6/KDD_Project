@@ -76,8 +76,9 @@ Features: Dataset Contains historical data of 45 stores in different regions for
         
 Stores: Dataset contains information on 45 stores like Type of store and Size(in sqft) of the store.
 
-Train: Dataset contains historical train data on which the model is trained. Features included are Store number, Department number, Date which is date of the week we are predicting the sales. Weekly_sales for given department in the given store, and IS holiday
- Example Hypothesis: Predicting Department wise sales for each store
+Train: Dataset contains historical train data on which the model is trained. Features included are Store number, Department number, Date which is date of the week we are predicting the sales. Weekly_sales for given department in the given store, and Is_holiday
+        Example Hypothesis: Predicting Department wise sales for each store
+        
 Test: It includes same fields as Train.csv excluding weekly sales which is our Target variable.
 
 ***Data Preperation/preprocessing:***
