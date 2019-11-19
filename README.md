@@ -57,29 +57,9 @@ Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target va
 According to the Cross-Industry Standard Process For Data Mining, a data mining project life cycle consist of six phases. The phase sequence is adaptive. That is, the next phase in the sequence often depends on the outcome associated with the previous phase.
 The six phases are:</br>
 
-**1. Business/Research Understanding Phase:**</br>
-In this step we define the project objectives and requirements in terms of the business or research unit as a whole and then translate these goals and restrictions into the formulation of a data mining problem definition.
-Finally, we prepare a preliminary strategy for achieving these objectives.
-
-**2. Data Understanding Phase:**</br>
-The first step in this phase is to collect the data and then use exploratory data analysis to familiarize ourselves with the data and discover initial insights. The next step is to evaluate the quality of the data and if required select the interesting subsets that may contain actionable patterns.
-
-**3. Data Preparation Phase:**</br>
-This is a  labor-intensive phase that covers all aspects of preparing the final data set, which shall be used for subsequent phases, from the initial, raw, dirty data. Here we select the cases and variables we want to analyze, and that is appropriate for our analysis.We perform transformations on certain variables if needed. The goal is to clean the raw data so that it is ready for the modeling tools.
-
-**4. Modeling Phase:**</br>
-In this phase, we select and apply one or more modeling techniques on our dataset. The model is often calibrated to optimize results.If necessary, additional data preparation may be required for supporting a particular technique
-
-**5. Evaluation Phase:**</br>
-In this phase, we evaluate one or more generated models for effectiveness. We determine whether defined objectives are achieved using the models. Finally, we come to a decision regarding the use of data mining results.
-
-**6. Deployment Phase:**</br>
-Model creation does not signify the completion of the project. After model creation, we have to deploy our model so that one can make use of it. The deployment can be carried in multiple ways. 
-For example, a simple deployment can be like generate a report or it can be more complex deployment like implement a parallel data mining process in some another domain.
-
 ***Business Understanding:***
 
-Our dataset is focused on predicting weekly sales from data collected from 45 walmart stores. There are different predictors that can have an effect on our target variable.Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We will explore what kind of correlations does this particular predictor have on our target variables. We would also like to know if unemployement rate around a particular store has any drastic effect on the sales of that store. Unemployment can be a major factor as people with low income might tend to contribute lesser to the sales as they will buy limited and cheaper products. One of the most interesting insights in the dataset would be looking at how markdowns will play a role with the weekly sales. 
+Our dataset is focused on predicting weekly sales from data collected from 45 walmart stores. There are different predictors that can have an effect on our target variable.Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We will explore what kind of correlations does this particular predictor have on our target variables. We would also like to know if unemployement rate around a particular store has any drastic effect on the sales of that store. Unemployment can be a major factor as people with low income might tend to contribute lesser to the sales as they will buy limited and cheaper products. One of the most interesting insights in the dataset would be looking at how markdowns will play a role with the weekly sales.
 
 
 ***Data Understanding:***
