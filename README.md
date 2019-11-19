@@ -88,7 +88,7 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 3.	Converting Datatype of Date column to DATETIME from OBJECT
 4.	Merging train dataset with store id on stores dataset 
 5.	Merging resulting dataset with features on 'Store','Date','IsHoliday'
-6.	Now we have a single dataset with all the columns required for exploratory Data Analysis.
+6.	Now we have a single dataset with all the columns required for exploratory Data Analysis./n
 7.Checking for Null values and imputing with constants
 8.Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming original dataset.
 
