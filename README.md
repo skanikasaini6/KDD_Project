@@ -105,7 +105,7 @@ After carefully analysis of our data in previous steps, we will be looking into 
 
 ***Evaluation:***
 
-We are going to build and train our model using the above modeling techniques. Every predictors will play and important role in analyzing the outcome from our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
+We are going to build and train our model using the above modeling techniques. Every predictors will play an important role in analyzing the outcome from our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
 
 ***Deployment:***
 
