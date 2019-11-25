@@ -107,7 +107,7 @@ We will aim to acheive a higher R2 value and low error metrics.
 
 ***Optimization***
 
-The result will be optimized using GridSearchCV where the best hyper parameters are chosen for the algorithm by checking out all possible values in the grid.
+The result will be optimized using GridSearchCV or RandomSearchCV where the best hyper parameters are chosen for the algorithm by checking out all possible values in the grid.
 
 ***Deployment:***
 
