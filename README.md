@@ -96,16 +96,18 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 
 ***Modeling:***
 
-After carefully analysis of our data in previous steps, we will be looking into conducting our predictive analysis using the following modeling techniques:
-
-* Logistic Regression
-* Clustering
-* Association Rules
+After the data pre-processing phase, unsupervised algorithms like Clustering will be applied to  group the data together and also draw meaningful insights from the visualizations. Next up will be the supervised algorithms to make the actual prediction. Various regression techniques like Linear Regression, Elastic Net Regression, Lasso Regression, Ridge Regression will be implemented. Also, ensemble methods like Random Forest Regressor, Gradient Boosting Regressor will also be implemented to enhance the results. 
 
 
 ***Evaluation:***
 
 We are going to build and train our model using the above modeling techniques. Every predictors will play an important role in analyzing the outcome from our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
+All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value , the more accurate the model is. In the same way, lower the error metrics value,  more accuarte the model is. 
+We will aim to acheive a higher R2 value and low error metrics. 
+
+***Optimization***
+
+The result will be optimized using GridSearchCV where the best hyper parameters are chosen for the algorithm by checking out all possible values in the grid.
 
 ***Deployment:***
 
