@@ -91,7 +91,7 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 *	Now we have a single dataset with all the columns required for Exploratory Data Analysis.
 *  Checking for null values and imputing with constants-
    Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks. We have   replaced the missing values with -9999 indicating no extra sales. 
-*  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigaed by tranforming  original dataset.
+*  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigated by tranforming  original dataset.
 
 
 ***Modeling:***
