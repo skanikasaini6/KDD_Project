@@ -102,7 +102,7 @@ After the data pre-processing phase, unsupervised algorithms like Clustering wil
 ***Evaluation:***
 
 We are going to build and train our model using the above modeling techniques. Every predictors will play an important role in analyzing the outcome from our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
-All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value , the more accurate the model is. In the same way, lower the error metrics value,  more accuarte the model is. 
+All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value , the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
 We will aim to acheive a higher R2 value and low error metrics. 
 
 ***Optimization/Deployment:***
