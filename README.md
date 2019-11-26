@@ -81,7 +81,7 @@ Train: Dataset contains historical train data on which the model is trained. Fea
         
 Test: It includes same fields as Train.csv excluding weekly sales which is our Target variable.
 
-***Data Preperation/preprocessing:***
+***Data Preparation/Preprocessing:***
 
 *	Importing Features,Stores,Train and Test datasets into jupyter notebook
 *	Understanding information provided in the datasets and looking for types of columns and missing values.
