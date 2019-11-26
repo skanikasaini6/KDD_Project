@@ -105,11 +105,10 @@ We are going to build and train our model using the above modeling techniques. E
 All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value , the more accurate the model is. In the same way, lower the error metrics value,  more accuarte the model is. 
 We will aim to acheive a higher R2 value and low error metrics. 
 
-***Optimization***
+***Optimization/Deployment:***
 
 The result will be optimized using GridSearchCV or RandomSearchCV where the best hyper parameters are chosen for the algorithm by checking out all possible values in the grid.
 
-***Deployment:***
 
 
 
