@@ -83,14 +83,15 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 
 ***Data Preparation/Preprocessing:***
 
-*	Importing Features,Stores,Train and Test datasets into jupyter notebook
+*	Importing Features,Stores,dt1 datasets into jupyter notebook
 *	Understanding information provided in the datasets and looking for types of columns and missing values.
-*	Converting Datatype of Date column to DATETIME from OBJECT
-*	Merging train dataset with store id on stores dataset 
-*	Merging resulting dataset with features dataset using the common predictors 'Store', 'Date', 'IsHoliday'
+*	Converted Datatype of Date column to DATETIME from OBJECT
+*   Checked presence of null value in the all the dataframe. We found that there are close to 4500 null values in the MARKDOWN's column and 585 null values in the CPI and Unemployment columns. Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks.
+*   Imputed the null value in the CPI and Unemployment column with the mean value of the column
+*   Imputed the null value in the MARKDOWN's column with 0
+*	Left joined the dt1 dataset with the Stores dataset based on the 'Store' column
+*	Left joined the resulting dataset with features dataset using the common predictors 'Store', 'Date', 'IsHoliday'
 *	Now we have a single dataset with all the columns required for Exploratory Data Analysis.
-*  Checking for null values and imputing with constants-
-   Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks. We have   replaced the missing values with -9999 indicating no extra sales. 
 *  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigated by transforming  original dataset.
 
 
@@ -108,9 +109,6 @@ We will aim to acheive a higher R2 value and low error metrics.
 ***Optimization/Deployment:***
 
 The result will be optimized using GridSearchCV or RandomSearchCV where the best hyper parameters are chosen for the algorithm by checking out all possible values in the grid.
-
-
-
 
 
 
