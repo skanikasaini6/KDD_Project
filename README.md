@@ -92,8 +92,13 @@ Test: It includes same fields as Train.csv excluding weekly sales which is our T
 *	Left joined the dt1 dataset with the Stores dataset based on the 'Store' column
 *	Left joined the resulting dataset with features dataset using the common predictors 'Store', 'Date', 'IsHoliday'
 *	Now we have a single dataset with all the columns required for Exploratory Data Analysis.
-*  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized    on to a single scale, the model might be biased towards high variance features. Bias can be mitigated by transforming  original dataset.
-
+*  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized on to a single scale, the model might be biased towards high variance features. Bias can be mitigated by transforming  original dataset.
+* Using the Date column from the final dataset, we created two new column
+    1.Year
+    2.Week - gives the info about what week of the year it is.
+*  We have 3 types of stores (A,B and C) which are categorical. Therefore we splitted each type as a feature into one-hot encoding.
+* We performed the one-hot encoding for three more columns('IsHoliday','Week','Year')
+* Now our dataset is ready for modeling
 
 ***Modeling:***
 
