@@ -184,5 +184,9 @@ Mean score: 0.9647339229122203
 
 The result was optimized using GridSearchCV or RandomSearchCV where the best hyperparameters are chosen for the algorithm by checking out all possible values in the grid.
 
+***Conclusion***
+
+For this project we have done several visualizations to dig deeper into the dataset. We find out various correlations between the features and the target variable. The unique thing about our data is that apart from Weekly Sales we have extra sales during promotional period. Our final dataset 
+
 
 
