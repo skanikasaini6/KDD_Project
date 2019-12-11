@@ -106,7 +106,8 @@ Model 1:  Linear Regression is used for finding a linear relationship between th
 
 R-Squared value
 This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variations in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
-The model performance for training set: 0.09827663017855981
+The model performance for training set: 0.09827663017855981 
+
 RMSE is 0.9524624955038273
 
 As shown, RMSE is high and R2 accuracy score is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
@@ -117,7 +118,9 @@ Lasso Regression: The goal of lasso regression is to obtain the subset of pred
 
 The model performance for the training set:
 RMSE is 0.9652534025602325
+
 R2 score is 0.07389497585513038
+
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
 
 Model 3:
@@ -126,13 +129,16 @@ Ridge Regression: Ridge Regression is a technique for analyzing multiple regre
 The model performance for the training set:
 
 RMSE is 0.9524627207560741
+
 R2 score is 0.09827620367307532
+
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
 
 Model 4:
 Elastic Regression: In statistics and, in particular, in the fitting of linear or logistic regression models, the elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
 
 RMSE is 0.9824627207560741
+
 R2 score is 0.02827620367307532
 
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
