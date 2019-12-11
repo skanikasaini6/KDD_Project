@@ -59,18 +59,17 @@ The six phases are:</br>
 
 ***Business Understanding:***
 
-Our dataset is focused on predicting weekly sales from data collected from 45 Walmart stores. There are different predictors that can have an effect on our target variable. Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We will explore what kind of correlations does this particular predictor have on our target variables. We would also like to know if the unemployment rate around a particular store has any drastic effect on the sales of that store. Unemployment can be a major factor as people with low income might tend to contribute lesser to the sales as they will buy limited and cheaper products. One of the most interesting insights in the dataset would be looking at how markdowns will play a role with the weekly sales. Markdowns are nothing but promotional sales for different time periods. Naturally the sales for these time period is going to be higher and will profit the stores. 
-
+Our dataset is focused on predicting weekly sales from data collected from 45 Walmart stores. There are different predictors that can have an effect on our target variable. Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We explored what kind of correlations does this particular predictor have on our target variables. One of the most interesting insights in the dataset to look at was how markdowns play a role with the weekly sales. Markdowns are nothing but promotional sales for different time periods. Naturally the sales for these time period is going to be higher and will profit the stores. 
 
 ***Data Understanding:***
 
-The main objective is to forecast weekly sales for each department in 45 Walmart stores located in different regions and also to carry out statistical testing and validation of the models which features DataPreprocessing, Exploratory Data Analysis, modeling on train dataset.
+The main objective was to forecast weekly sales for each department in 45 Walmart stores located in different regions and also to carry out statistical testing and validation of the models which features DataPreprocessing, Exploratory Data Analysis, modeling on train dataset.
 
 1.	Features.csv
 2.	Stores.csv
 3.	Train.csv
 
-Features: Dataset Contains historical data of 45 stores in different regions for a period of 2 years. It includes major markdown events that happen throughout the year like Christmas, Labour Day, Thanksgiving, Super bowl. Other features like IsHoliday, Date, Fuel_Price can be used in Hypothesis. 
+Features: Dataset contains historical data of 45 stores in different regions for a period of 2 years. It includes major markdown events that happen throughout the year like Christmas, Labour Day, Thanksgiving, Super bowl. Other features like IsHoliday, Date, Fuel_Price can be used in Hypothesis. 
            For Example the effect of sales during holiday seasons on each store on a weekly basis
         
 Stores: Dataset contains information on 45 stores like Type of store and Size(in sqft) of the store.
@@ -78,8 +77,6 @@ Stores: Dataset contains information on 45 stores like Type of store and Size(in
 Train: Dataset contains historical train data on which the model is trained. Features included are Store number, Department number, Date which is the date of the week we are predicting the sales. Weekly_sales for the given department in the given store, and Is_holiday
         Example Hypothesis: Predicting Department wise sales for each store
         
-Test: It includes the same fields as Train.csv excluding weekly sales which is our Target variable.
-
 ***Data Preparation/Preprocessing:***
 
 *	Importing Features, Stores,dt1 datasets into jupyter notebook
@@ -101,21 +98,18 @@ Test: It includes the same fields as Train.csv excluding weekly sales which is o
 
 ***Modeling:***
 
-After the data pre-processing phase, unsupervised algorithms like Clustering will be applied to group the data together and also draw meaningful insights from the visualizations. Next up will be the supervised algorithms to make the actual prediction. Various regression techniques like Linear Regression, Elastic Net Regression, Lasso Regression, Ridge Regression will be implemented. Also, ensemble methods like Random Forest Regressor, Gradient Boosting Regressor will also be implemented to enhance the results. 
+After the data pre-processing phase,we have implemented the supervised algorithms to make the predictions for WeeklySales. Various regression techniques like Linear Regression, Elastic Net Regression, Lasso Regression, Ridge Regression were implemented. Also, we used the Random Forest Regressor ensembling method to enhance the model results. 
 
 
-Algorithms used:
-Model 1:  Linear RegressionLinear regression is used for finding a linear relationship between the target and one or more predictors. There are two types of linear regression- Simple and Multiple.  Multiple Linear Regression (MLR) model is used when we have two or more predictor variables for one single output variable.
-The Multiple Linear Regression is run on the partitioned data with the input variables  Store                    
-Dept,Date,IsHoliday,bool,Type, Weekly_Sales, Temperature, CPI ,Unemployment, Fuel_Price, MarkDown1,Size , MarkDown2 ,MarkDown3  ,MarkDown4              
-MarkDown5.Dummies for 'IsHoliday','Type', 'Week','Year' are created. Weekly sales are output target variable. 
+Algorithms explained:
+Model 1:  Linear RegressionLinear regression is used for finding a linear relationship between the target and one or more predictors. 
 
 R-Squared value
 This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variation in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
 The model performance for training set: 0.09827663017855981
 RMSE is 0.9524624955038273
 
-AS shown, RMSE is high and R2 accuracy sore is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
+As shown, RMSE is high and R2 accuracy sore is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
 So we tried to choose the best subsets as our predictors. Ridge and Lasso Regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. Ridge Regression: In ridge regression, the cost function is altered by adding a penalty equivalent to the square of the magnitude of the coefficients.
 
 Model 2:
@@ -159,13 +153,13 @@ It is observed that among the 6 models applied Decisiontreeregressor and RandomF
 
 ***Evaluation:***
 
-We are going to build and train our model using the above modelling techniques. Every predictor will play an important role in analyzing the outcome of our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
+We are going to build and train our model using the above modeling techniques. Every predictor will play an important role in analyzing the outcome of our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
 
 All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value, the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
 Goal: higher R2 value and low error metrics. 
 
 
-Metrics used to perform Evaluation of better performing models:
+Metrics that were used to perform Evaluation of better performing models:
 
 RMSE:
 The RMSE for your training and your test sets should be very similar if you have built a good model. If the RMSE for the test set is much higher than that of the training set, it is likely that you've badly overfitted the data, i.e. you've created a model that tests well in a sample, but has little predictive value when tested out of sample.
@@ -176,21 +170,19 @@ R-squared (R2) is a statistical measure that represents the proportion of the va
 Cross-Validation :
 Cross-Validation is used to assess the predictive performance of the models and to judge how they perform outside the sample to a new data set also known as test data. The motivation to use cross-validation techniques is that when we fit a model, we are fitting it to a training dataset. The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. Cross-Validation is a very useful technique for assessing the effectiveness of your model, particularly in cases where you need to mitigate over-fitting.
 
-Validating performance of DecisionTreeregression and random Forest regressor which yielded low RMSE error value.
+Validating performance of DecisionTree Regression and Random Forest Regressor which yielded low RMSE error value.
 
 5 fold cross validation on Decision tree Regression:
 5 fold cross vaidation score: [0.94428852 0.94733705 0.94651084 0.94297185 0.96514304]
-Mean score 0.9447009229122203
+Mean score: 0.9447009229122203
 
 5 fold cross-validation on Random forest Regression:
 5 fold cross vaidation score: [0.9600374 0.96511895 0.96494218 0.96842691 0.94239636]
-Mean score 0.9647339229122203
+Mean score: 0.9647339229122203
 
 ***Optimization/Deployment:***
 
-The result will be optimized using GridSearchCV or RandomSearchCV where the best hyperparameters are chosen for the algorithm by checking out all possible values in the grid.
-
-**Conclusion**
+The result was optimized using GridSearchCV or RandomSearchCV where the best hyperparameters are chosen for the algorithm by checking out all possible values in the grid.
 
 
 
