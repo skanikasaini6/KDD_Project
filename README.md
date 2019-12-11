@@ -178,10 +178,12 @@ Validating performance of DecisionTree Regression and Random Forest Regressor wh
 
 5 fold cross validation on Decision tree Regression:
 5 fold cross vaidation score: [0.94428852 0.94733705 0.94651084 0.94297185 0.96514304]
+
 Mean score: 0.9447009229122203
 
 5 fold cross-validation on Random forest Regression:
 5 fold cross vaidation score: [0.9600374 0.96511895 0.96494218 0.96842691 0.94239636]
+
 Mean score: 0.9647339229122203
 
 ***Optimization/Deployment:***
