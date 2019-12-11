@@ -112,15 +112,15 @@ Dept,Date,IsHoliday,bool,Type, Weekly_Sales, Temperature, CPI ,Unemployment, Fue
 MarkDown5.Dummies for 'IsHoliday','Type', 'Week','Year' are created. Weekly sales are output target variable. 
 
 R-Squared value
-This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variation in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
+This value ranges from 0 to 1. Value â€˜1â€™ indicates predictor perfectly accounts for all the variation in Y. Value â€˜0â€™ indicates that predictor â€˜xâ€™ accounts for no variation in â€˜yâ€™.
 The model performance for training set: 0.09827663017855981
 RMSE is 0.9524624955038273
 
 AS shown, RMSE is high and R2 accuracy sore is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
-So we tried to choose the best subsets as our predictors. Ridge and Lasso Regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. Ridge Regression: In ridge regression, the cost function is altered by adding a penalty equivalent to the square of the magnitude of the coefficients.
+So we tried to choose the best subsets as our predictors. Ridge and Lasso Regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linearÂ regression.Â Ridge Regression: InÂ ridge regression, the cost function is altered by adding a penalty equivalent to the square of the magnitude of the coefficients.
 
 Model 2:
-Lasso Regression: The goal of lasso regression is to obtain the subset of predictors that minimizes prediction error for a quantitative response variable. The lasso does this by imposing a constraint on the model parameters that causes regression coefficients for some variables to shrink toward zero.
+Lasso Regression: The goal ofÂ lasso regression isÂ to obtain the subset of predictors that minimizes prediction error for a quantitative response variable. TheÂ lassoÂ does this by imposing a constraint on the model parameters that causesÂ regressionÂ coefficients for some variables to shrink toward zero.
 
 The model performance for the training set:
 RMSE is 0.9652534025602325
@@ -128,7 +128,7 @@ R2 score is 0.07389497585513038
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
 
 Model 3:
-Ridge Regression: Ridge Regression is a technique for analyzing multiple regression data that suffer from multicollinearity. ... By adding a degree of bias to the regression estimates, ridge regression reduces the standard errors. It is hoped that the net effect will be to give estimates that are more reliable.
+Ridge Regression: Ridge RegressionÂ is a technique for analyzing multipleÂ regressionÂ data that suffer from multicollinearity. ... By adding a degree of bias to theÂ regressionÂ estimates,Â ridge regressionÂ reduces the standard errors. It is hoped that the net effect will be to give estimates that are more reliable.
 
 The model performance for the training set:
 
@@ -137,7 +137,7 @@ R2 score is 0.09827620367307532
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
 
 Model 4:
-Elastic Regression: In statistics and, in particular, in the fitting of linear or logistic regression models, the elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
+Elastic Regression:Â In statistics and, in particular, in the fitting of linear or logisticÂ regressionÂ models, theÂ elastic netÂ is a regularizedÂ regressionÂ method that linearly combines the L1Â and L2Â penalties of the lasso and ridge methods.
 
 RMSE is 0.9824627207560741
 R2 score is 0.02827620367307532
@@ -145,13 +145,13 @@ R2 score is 0.02827620367307532
 Unfortunately, this model gave us high RMSE and R2 score, hence cannot be chosen as the best model.
 
 Model 5:
-Decision Tree Regression: Decision tree regression observes features of an object and trains a model in the structure of a tree to predict data in the future to produce meaningful continuous output.
+Decision Tree Regression:Â Decision tree regressionÂ observes features of an object and trains a model in the structure of aÂ treeÂ to predict data in the future to produce meaningful continuous output.
 
 We observed Mean Square Error and Root Mean Square error as 0.0857625, 0.23749489
 
 Model 6:
 Random forest regression:
-A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap Aggregation, commonly known as bagging. Bagging, in the Random Forest method, involves training each decision tree on a different data sample where sampling is done with replacement.
+A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique calledÂ Bootstrap Aggregation, commonly knownÂ asÂ bagging. Bagging, in the Random Forest method, involves training each decision tree on a different data sample where sampling is done with replacement.
 
 This particular model yields an RMSE value of 0.19.
 
@@ -172,10 +172,10 @@ RMSE:
 The RMSE for your training and your test sets should be very similar if you have built a good model. If the RMSE for the test set is much higher than that of the training set, it is likely that you've badly overfitted the data, i.e. you've created a model that tests well in a sample, but has little predictive value when tested out of sample.
 
 R2:
-R-squared (R2) is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in a regression model. So, if the R2 of a model is 0.50, then approximately half of the observed variation can be explained by the model's inputs. R-squared values range from 0 to 1 and are commonly stated as percentages from 0% to 100%.
+R-squared (R2) is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in aÂ regressionÂ model. So, if the R2Â of a model is 0.50, then approximately half of the observed variation can be explained by the model's inputs. R-squared values range from 0 to 1 and are commonly stated as percentages from 0% to 100%.
 
-Cross-Validation :
-Cross-Validation is used to assess the predictive performance of the models and to judge how they perform outside the sample to a new data set also known as test data. The motivation to use cross-validation techniques is that when we fit a model, we are fitting it to a training dataset. The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. Cross-Validation is a very useful technique for assessing the effectiveness of your model, particularly in cases where you need to mitigate over-fitting.
+Cross-ValidationÂ :
+Cross-Validation is used to assess the predictive performance of the models and to judge how they perform outside the sample to a new data set also known as test data. The motivation to useÂ cross-validationÂ techniques is that when we fit a model, we are fitting it to a training dataset. The procedure has a single parameter calledÂ kÂ that refers to the number of groups that a given data sample is to be split into.Â Cross-Validation is aÂ very useful technique for assessing the effectiveness of your model, particularly in cases where you need to mitigate over-fitting.
 
 Validating performance of DecisionTreeregression and random Forest regressor which yielded low RMSE error value.
 
@@ -190,4 +190,8 @@ Mean score 0.9647339229122203
 ***Optimization/Deployment:***
 
 The result will be optimized using GridSearchCV or RandomSearchCV where the best hyperparameters are chosen for the algorithm by checking out all possible values in the grid.
+
+**Conclusion**
+
+
 
