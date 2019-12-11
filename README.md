@@ -59,7 +59,7 @@ The six phases are:</br>
 
 ***Business Understanding:***
 
-Our dataset is focused on predicting weekly sales from data collected from 45 Walmart stores. There are different predictors that can have an effect on our target variable. Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We explored what kind of correlations does this particular predictor have on our target variables. One of the most interesting insights in the dataset to look at was how markdowns play a role with the weekly sales. Markdowns are nothing but promotional sales for different time periods. Naturally the sales for these time period is going to be higher and will profit the stores. 
+Our dataset is focused on predicting weekly sales from data collected from 45 Walmart stores. There are different predictors that can have an effect on our target variable. Usually, during holidays people go out more for grocery shopping, so sales are expected to increase during those holiday weeks. We explored what kind of correlations does this particular predictor have on our target variables. One of the most interesting insights in the dataset to dwelve into was how markdowns play a role with the weekly sales. Markdowns are nothing but promotional sales for different time periods. Naturally the sales for these time period is going to be higher and will profit the stores. 
 
 ***Data Understanding:***
 
@@ -82,34 +82,34 @@ Train: Dataset contains historical train data on which the model is trained. Fea
 *	Importing Features, Stores,dt1 datasets into jupyter notebook
 *	Understanding information provided in the datasets and looking for types of columns and missing values.
 *	Converted Datatype of Date column to DATETIME from OBJECT
-*   Checked presence of a null value in all the data frame. We found that there are close to 4500 null values in the MARKDOWN's column and 585 null values in the CPI and Unemployment columns. Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks.
+*   Checked for null values in all the data frames. We found that there are close to 4500 null values in the MARKDOWN's column and 585 null values in the CPI and Unemployment columns. Markdowns 1-5 have a lot of missing values since these markdowns contain values of only particular holiday weeks.
 *   Imputed the null value in the CPI and Unemployment column with the mean value of the column
 *   Imputed the null value in the MARKDOWN's column with 0
 *	Left joined the dt1 dataset with the Stores dataset based on the 'Store' column
 *	Left joined the resulting dataset with features dataset using the common predictors 'Store', 'Date', 'IsHoliday'
 *	Now we have a single dataset with all the columns required for Exploratory Data Analysis.
 *  Standardizing the features in the Dataset to balance the variance between the features. If the features are not normalized on to a single scale, the model might be biased towards high variance features. Bias can be mitigated by transforming original dataset.
-* Using the Date column from the final dataset, we created two new column
-    1.Year
+* Using the Date column from the final dataset, we created two new columns
+    1. Year
     2. Week - gives the info about what week of the year it is.
 *  We have 3 types of stores (A, B and C) which are categorical. Therefore we split each type as a feature into one-hot encoding.
 * We performed the one-hot encoding for three more columns('IsHoliday', 'Week','Year')
-* Now our dataset is ready for modelling
+* Now our dataset is ready for modeling
 
 ***Modeling:***
 
-After the data pre-processing phase,we have implemented the supervised algorithms to make the predictions for WeeklySales. Various regression techniques like Linear Regression, Elastic Net Regression, Lasso Regression, Ridge Regression were implemented. Also, we used the Random Forest Regressor ensembling method to enhance the model results. 
+After the data pre-processing phase, we have implemented the supervised learning algorithms to make the predictions for WeeklySales. Various regression techniques like Linear Regression, Elastic Net Regression, Lasso Regression, Ridge Regression were implemented. Also, we used the Random Forest Regressor ensembling method to enhance the model results. 
 
 
 Algorithms explained:
-Model 1:  Linear RegressionLinear regression is used for finding a linear relationship between the target and one or more predictors. 
+Model 1:  Linear Regression is used for finding a linear relationship between the target and one or more predictors. 
 
 R-Squared value
-This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variation in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
+This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variations in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
 The model performance for training set: 0.09827663017855981
 RMSE is 0.9524624955038273
 
-As shown, RMSE is high and R2 accuracy sore is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
+As shown, RMSE is high and R2 accuracy score is low for the model. This indicated model is not better performing and clearly, there is some overfitting.
 So we tried to choose the best subsets as our predictors. Ridge and Lasso Regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. Ridge Regression: In ridge regression, the cost function is altered by adding a penalty equivalent to the square of the magnitude of the coefficients.
 
 Model 2:
@@ -153,13 +153,11 @@ It is observed that among the 6 models applied Decisiontreeregressor and RandomF
 
 ***Evaluation:***
 
-We are going to build and train our model using the above modeling techniques. Every predictor will play an important role in analyzing the outcome of our models. Although our main focus is on the 5 Markdowns and its effects on Weekly Sales.
+All the models that were built were evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolte Error). The higher the R2 value, the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
 
-All the models that are built will be evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value, the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
 Goal: higher R2 value and low error metrics. 
 
-
-Metrics that were used to perform Evaluation of better performing models:
+Metrics that were used to evaluate our models were:
 
 RMSE:
 The RMSE for your training and your test sets should be very similar if you have built a good model. If the RMSE for the test set is much higher than that of the training set, it is likely that you've badly overfitted the data, i.e. you've created a model that tests well in a sample, but has little predictive value when tested out of sample.
@@ -186,10 +184,7 @@ The result was optimized using GridSearchCV or RandomSearchCV where the best hyp
 
 ***Conclusion***
 
-For this project we have done several visualizations to dig deeper into the dataset. We find out various correlations between the features and the target variable. The unique thing about our data is that apart from Weekly Sales we have extra sales during promotional period. Few attributes including the target variable , had imbalanced class. We handled it using the startify paramter while splitting the dataset. Data pre-processing was done where two new columns "year" and "week" were added. Outliers were detected using the box plots.We implemeted many algorithms : linear regression, ridge regression, lasso regression, elastic net regression , decision tree regressor, ranodm forest regressor. Among these, the first four algorithms did not perform really well. They gave a very low accuracy. The last two algorithms performed well, among which Random Forest Regressor gave the best performance. 
-One challenge we faced with the dataset was the huge number of records. Algorithms like Random Forest and decision tree took a lot time. Same is the case with GridSearchCV. We ran the algorithms on Google Colab to solve the problem.
-For future work, this project can be added with more features making the dataset more rich in features. For the new individuals to continue this project, it is important to understand the meaning of all the features before going ahead with the prediction. For example, the attributes like markdowns should be understood well as they might be misunderstood as something else. Also, it can be implemented on Microsoft Azure and other machine learnign algorithms can be tried out for better results.
-This project thus predicts the weekly sales inspite of the challenges that we faced and using the best model created.
-
-
-
+For this project we have done several visualizations to dig deeper into the dataset. We find out various correlations between the features and the target variable. The unique thing about our data is that apart from Weekly Sales we have extra sales during promotional period. Few attributes including the target variable , had imbalanced class. We handled it using the stratify parameter while splitting the dataset. As part of data preprocessing, two new columns "Year" and "Week" were added. Outliers were detected using the box plots. We implemeted many algorithms : linear regression, ridge regression, lasso regression, elastic net regression , decision tree regressor, and random forest regressor. Among these, the first four algorithms did not perform very well. They gave a very low accuracy. The last two algorithms performed well, among which Random Forest Regressor gave the best performance. 
+One challenge we faced with the dataset was the huge number of records. Algorithms like Random Forest and decision tree took a lot time to run. Same was the case with GridSearchCV. We ran the algorithms on Google Colab to solve the problem.
+For future work, this project can be added with more features making the dataset more rich in features. For the new individuals to continue this project, it is important to understand the meaning of all the features before going ahead with the prediction. For example, the attributes like markdowns should be understood well as they might be misunderstood as something else. Also, it can be implemented on Microsoft Azure and other machine learning algorithms can be tried out for better results.
+This project thus predicts the Weekly sales inspite of the challenges that we faced and using the best model created.
