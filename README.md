@@ -186,7 +186,10 @@ The result was optimized using GridSearchCV or RandomSearchCV where the best hyp
 
 ***Conclusion***
 
-For this project we have done several visualizations to dig deeper into the dataset. We find out various correlations between the features and the target variable. The unique thing about our data is that apart from Weekly Sales we have extra sales during promotional period. Our final dataset 
+For this project we have done several visualizations to dig deeper into the dataset. We find out various correlations between the features and the target variable. The unique thing about our data is that apart from Weekly Sales we have extra sales during promotional period. Few attributes including the target variable , had imbalanced class. We handled it using the startify paramter while splitting the dataset. Data pre-processing was done where two new columns "year" and "week" were added. Outliers were detected using the box plots.We implemeted many algorithms : linear regression, ridge regression, lasso regression, elastic net regression , decision tree regressor, ranodm forest regressor. Among these, the first four algorithms did not perform really well. They gave a very low accuracy. The last two algorithms performed well, among which Random Forest Regressor gave the best performance. 
+One challenge we faced with the dataset was the huge number of records. Algorithms like Random Forest and decision tree took a lot time. Same is the case with GridSearchCV. We ran the algorithms on Google Colab to solve the problem.
+For future work, this project can be added with more features making the dataset more rich in features. For the new individuals to continue this project, it is important to understand the meaning of all the features before going ahead with the prediction. For example, the attributes like markdowns should be understood well as they might be misunderstood as something else. Also, it can be implemented on Microsoft Azure and other machine learnign algorithms can be tried out for better results.
+This project thus predicts the weekly sales inspite of the challenges that we faced and using the best model created.
 
 
 
