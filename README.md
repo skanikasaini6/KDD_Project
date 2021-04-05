@@ -50,7 +50,7 @@ Our aim is to predict the Weekly Sales. Therefore, Weekly_Sales is our target va
 
 <p align="center"> 
     <a href="#">
-        <img src="https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.crispdm.help/images/crisp_process.gif" height="50%" width="50%">
+        <img src="CRISPDM_Process_Diagram.png" height="50%" width="50%">
     </a>
 </p> 
 
