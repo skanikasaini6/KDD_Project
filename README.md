@@ -159,7 +159,7 @@ It is observed that among the 6 models applied Decisiontreeregressor and RandomF
 
 ***Evaluation:***
 
-All the models that were built were evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolte Error). The higher the R2 value, the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
+All the models that were built were evaluated using the R2 (Determination), MSE(Mean Score Error), RMSE(Root Mean Square Error), MAE(Mean Absolute Error). The higher the R2 value, the more accurate the model is. In the same way, lower the error metrics value,  more accurate the model is. 
 
 Goal: higher R2 value and low error metrics. 
 
